@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: 'Special Elite', cursive;
+  color: whitesmoke;
+  background-color: #0e0e0e;
+}
+::selection{
+  color: red;
+  text-shadow: 0px 5px 30px red;
+}
+section{
+  width: 100%;
+  height: 100vh;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  text-align: center;
+
+  h1{
+    font-size: 2em;
+  }
+
+  input{
+    border: 1px solid whitesmoke;
+    font-size: 2rem;
+    text-align: center;
+  }
+  button{
+    font-size: 2rem;
+    border: 1px solid whitesmoke;
+    padding-inline: .5rem;
+    padding-block: .3rem;
+
+    &:hover{
+      color: red;
+    }
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.chat{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .roomName{
+    font-size: 3rem;
+  }
+  .chatPanel{
+    border: 1px solid whitesmoke;
+    min-height: 40vh;
+    width: 30%;
+    font-size: 1rem;
+    padding: .5rem;
+    
+
+    .you{
+      display: flex;
+      justify-content: right;
+      text-align: right;
+    }
+    .sender{
+      display: flex;
+      justify-content: left;
+      text-align: left;
+    }
+  }
+}
