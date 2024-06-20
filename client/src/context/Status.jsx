@@ -10,8 +10,10 @@ const Status = ({children}) => {
   const [ oyoID , setOyoID ] = useState("");
   const [ usersInRoom , setUsersInRoom ] = useState([]);
 
+  const [view, setView] = useState(1);
+
   return (
-    <StatusContext.Provider value={{ username , setUsername , oyoID , setOyoID , usersInRoom , setUsersInRoom }}>
+    <StatusContext.Provider value={{ username , setUsername , oyoID , setOyoID , usersInRoom , setUsersInRoom, view, setView }}>
       {children}
     </StatusContext.Provider>
   )

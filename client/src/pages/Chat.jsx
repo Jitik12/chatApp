@@ -1,6 +1,7 @@
 import React , {useContext , useState} from 'react'
 import { StatusContext } from '../context/Status';
 import { useNavigate } from 'react-router-dom';
+import { pink } from '@mui/material/colors';
 
 
 const Chat = ({socket}) => {
@@ -40,7 +41,7 @@ const Chat = ({socket}) => {
   }
 
   return (
-    <section className='chat'>
+    <section className='chat' style={{background: pink}}>
       <div className='roomName'>
         <h1>Room : {oyoID}</h1>
       </div>

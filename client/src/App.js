@@ -20,12 +20,12 @@ function App() {
       children:[
         {
           path:"",
-          element: <Home socket={socket} />,
+          element: <Chat socket={socket} />,
         },
-        {
-          path: "chat",
-          element: (username === "" || oyoID === "" ) ? <Home socket={socket}/> : <Chat socket={socket} />
-        }
+        // {
+        //   path: "chat",
+        //   element: (username === "" || oyoID === "" ) ? <Home socket={socket}/> : <Chat socket={socket} />
+        // }
       ]
     }
   ])
